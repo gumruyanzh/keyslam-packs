@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gumruyanzh/keyslam-packs/blob/main/spec/pack.schema.json",
+  "title": "Keyslam sound pack (pack.json, formatVersion 1)",
+  "type": "object",
+  "required": [
+    "formatVersion",
+    "id",
+    "name",
+    "kind",
+    "groups"
+  ],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "description": "Shown under the name, e.g. Clicky, Tactile, Linear, Typewriter"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "alpha",
+          "space",
+          "enter",
+          "backspace",
+          "modifier"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "down"
+        ],
+        "properties": {
+          "down": {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "soft",
+                "medium",
+                "hard",
+                "slam"
+              ]
+            },
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          },
+          "up": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
