@@ -2,7 +2,7 @@
 
 The open file format for sound packs used by [Keyslam](https://keyslam.com), the Mac keyboard sound app that plays real mechanical keyboard and typewriter recordings as you type. On MacBooks with Apple's motion sensor it picks soft, medium, hard or slam strikes to match how hard you type.
 
-This repo holds the format spec, a JSON Schema and a complete example pack. Keyslam itself is launching soon: see [keyslam.com](https://keyslam.com), and try every bundled sound in the browser at [keyslam.com/keyboard-simulator/](https://keyslam.com/keyboard-simulator/).
+This repo holds the format spec, a JSON Schema and a complete example pack. Keyslam itself is available: [download it from keyslam.com](https://keyslam.com/download/) (macOS 13 or later, $3.99 once after a 7-day free trial), and try every bundled sound in the browser at [keyslam.com/keyboard-simulator/](https://keyslam.com/keyboard-simulator/).
 
 ## Install a pack
 
@@ -56,16 +56,21 @@ Each bundled pack is cut from one real typing recording. Every strike is detecte
 
 ## Credits (bundled packs)
 
-All source recordings are public domain (CC0) on Freesound. Thank you to the people who recorded and shared them.
+All source recordings are public domain (CC0) on Freesound. Thank you to the people who recorded and shared them. MX Black, Gateron Red, Rainy 75, Unicomp and Model F are new in Keyslam 1.0.1.
 
 | Pack | Kind | Recording | By | License |
 | --- | --- | --- | --- | --- |
 | MX Blue | Clicky | [Mechanical Keyboard 'Cherry Blue Switches'](https://freesound.org/s/382057/) | EricsSoundschmiede | CC0 1.0 |
 | MX Brown | Tactile | [Mechanical Keyboard Cherry MX Brown](https://freesound.org/s/400167/) | majod | CC0 1.0 |
 | MX Red | Linear | [Keyboard clicking typing Cherry Red Mechanical](https://freesound.org/s/499773/) | handygaber | CC0 1.0 |
+| MX Black | Linear | [leopold fc980m pd cherry mx black.flac](https://freesound.org/s/628325/) | ujonathan | CC0 1.0 |
+| Gateron Red | Linear | [Typing on a mechanical keyboard](https://freesound.org/s/583085/) | IRF1010N | CC0 1.0 |
 | Topre | Electro-capacitive | [Keyboard Typing 2 (HHKB, Topre)](https://freesound.org/s/546033/) | grcekh | CC0 1.0 |
 | Leopold | Tactile | [Mechanical Keyboard Typing (Treble Version)](https://freesound.org/s/450282/) | stu556 | CC0 1.0 |
 | WhiteFox | Tactile | [Keyboard Typing 10 (WhiteFox, Mechanical)](https://freesound.org/s/546167/) | grcekh | CC0 1.0 |
+| Rainy 75 | Mechanical | [Typing on a rainy 75](https://freesound.org/s/815614/) | Techrul | CC0 1.0 |
+| Unicomp | Buckling spring | [Typing on a keyboard](https://freesound.org/s/489423/) | SamsterBirdies | CC0 1.0 |
+| Model F | Buckling spring | [IBM Model F keyboard typing](https://freesound.org/s/500430/) | Fractal_ | CC0 1.0 |
 | Vintage Technics | Linear, modded | [Keyboard typing sounds: Unidentified Technics keyboard](https://freesound.org/s/665075/) | zrrion | CC0 1.0 |
 | Laptop | Butterfly | [Computer keyboard typing and keystrokes - Apple MacBook Pro 2018](https://freesound.org/s/565645/) | khenshom | CC0 1.0 |
 | Selectric | Typewriter | [Typewriter, IBM Selectric II](https://freesound.org/s/224012/) | secretmojo | CC0 1.0 |
